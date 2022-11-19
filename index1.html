@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizaah School</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="products">
+        <div class="product-items">
+            <img src="/images/Rectangle 1.png" alt="product1">
+            <img src="/images/Rectangle 2.png" alt="product2">
+            <img src="/images/Rectangle 3.png" alt="product3">
+            <img src="/images/Rectangle 4.png" alt="product4">
+        </div>
+        <div class="info">
+            <p class="cloth">CLOTHING</p>
+            <h1>ribane ls top - chocolate <br> $38.20</h1>
+            <p class="tax">inclusive of all taxes</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged</p>
+            <!-- <p class="color">color:Brown</p> -->
+            <label for="color" class="color">COLOR:</label>
+            <select name="color" class="color" required>
+                <option value="Brown">Brown</option>
+                <option value="Green">Green</option>
+                <option value="Purple">Purple</option>
+                <option value="Blue">Blue</option>
+            </select><br>
+            <img src="/images/Ellipse 1.png" alt="" class="btn1">
+            <img src="/images/Ellipse 2.png" alt="" class="btn1">
+            <img src="/images/Ellipse 3.png" alt="" class="btn1">
+            <img src="/images/Ellipse 4.png" alt="" class="btn1"> <br>
+            <!-- <p class="color">size:xs</p> -->
+            <label for="size" class="size">SIZE:</label>
+            <select name="size" class="size" required>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select><br>
+            <button class="btn1">XS</button>
+            <button class="btn1">S</button>
+            <button class="btn1">M</button>
+            <button class="btn1">L</button>
+            <button class="btn1">XL</button>
+            <div class="add-to-cart1">
+
+                <div="container">
+                    <!-- adding button and heading to show the digits -->
+                    <!--increment() and decrement() functions on button click-->
+                    <button onclick="increment()">+</button>
+                    <h2 id="counting"></h2>
+                    <button onclick="decrement()">-</button>
+            </div>
+
+            <!-- <button class="add-to-cart">ADD TO CART</button> -->
+            <button class="trigger">ADD TO CART</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h1>ADDED TO CART!</h1>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    </div>
+    <button class="buy-it-now">BUY IT NOW</button>
+    
+    <div class="icon">
+        <span><img src="/images/Vector.png" alt="">Materials</span>
+        <span><img src="/images/Vector (1).png" alt="">Shipping & Return</span>
+        <span><img src="/images/Vector (2).png" alt="">Care Guide</span>
+    </div>
+
+
+    <!-- second part -->
+    <div class="money-back">
+        <h3>THE PERFECT FIT OR YOUR MONEY BACK </h3>
+        <p> We understand that creating your custom size can feel daunting. But not to worry, it's actually quite easy
+            and completely risk-free. If you're not 100% happy with your fit, we'll remake your first shirt from scratch
+            free of charge or give your money back.</p>
+        <button>CREATE YOUR DESIGN</button>
+    </div>
+
+
+
+    <!-- features -->
+    
+
+
+    <h3 class="prdt">Product features</h3>
+    <div class="features">
+       
+        <div class="feature-grid">
+            <img src="/images/Rectangle 20.png" alt="">
+            <h4>TAB FRONT WITH BUTTON </h4>
+            <p> Fashion to me has become very disposable; I wanted to get back to craft, to clothes that could last.</p>
+        </div>
+        <div class="feature-grid">
+            <img src="/images/Rectangle 21.png" alt="">
+            <h4> CARBON FOOTPRINT </h4>
+            <p> Never in the history of the world have women been more in control of their destiny.</p>
+        </div>
+        <div class="feature-grid">
+            <img src="/images/Rectangle 22.png" alt="">
+            <h4> PROVENANCE JOURNEY</h4>
+            <p> Fashion to me has become very disposable; I wanted to get back to craft, to clothes that could last.</p>
+        </div>
+        <div class="feature-grid">
+            <img src="/images/Rectangle 23.png" alt="">
+            <h4> MADE IN PORTUGAL </h4>
+            <p> Never in the history of the world have women been more in control of their destiny.</p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+    <script>
+    const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+</script>
+</body>
+
+</html>
+
+
+<!-- *********** -->
+
+
+
+
+
+
+
